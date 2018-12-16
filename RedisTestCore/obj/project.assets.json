@@ -725,10 +725,11 @@
       ]
     },
     "Newtonsoft.Json/11.0.2": {
-      "sha512": "znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
       "path": "newtonsoft.json/11.0.2",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
@@ -773,28 +774,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/yaojie/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\jiede\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/RedisTestCore.csproj",
+      "projectUniqueName": "C:\\Users\\jiede\\Source\\Repos\\JasonDevStudio\\RedisTestCore\\RedisTestCore\\RedisTestCore.csproj",
       "projectName": "RedisTestCore",
-      "projectPath": "/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/RedisTestCore.csproj",
-      "packagesPath": "/Users/yaojie/.nuget/packages/",
-      "outputPath": "/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/obj",
+      "projectPath": "C:\\Users\\jiede\\Source\\Repos\\JasonDevStudio\\RedisTestCore\\RedisTestCore\\RedisTestCore.csproj",
+      "packagesPath": "C:\\Users\\jiede\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jiede\\Source\\Repos\\JasonDevStudio\\RedisTestCore\\RedisTestCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/yaojie/.config/NuGet/NuGet.Config"
+        "C:\\Users\\jiede\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -816,7 +819,6 @@
             "version": "[3.0.30, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
