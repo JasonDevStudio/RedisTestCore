@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{BEB2717F-DCD4-40C4-8ECF-060426C92106}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RedisTestCore/Program.cs">
+    <Files>
+      <File FileName="RedisClient/RedisHelper.cs" Line="7" Column="9" />
+      <File FileName="RedisTestCore/Program.cs" Line="12" Column="50" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RedisTestCore" expanded="True">
+            <Node name="RedisClient" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="RedisTest" expanded="True" />
+            <Node name="RedisTestCore" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.RedisTestCore PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.RedisTest PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "CSRedisCore/3.0.30": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "SafeObjectPool": "1.0.12"
+        },
+        "compile": {
+          "lib/netstandard2.0/CSRedisCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CSRedisCore.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -207,10 +220,40 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "SafeObjectPool/1.0.12": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SafeObjectPool.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SafeObjectPool.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "CSRedisCore/3.0.30": {
+      "sha512": "q8l+NTQEYpfBVIS187O8C1dTugjkv3+Av9aklkDWnrBfLLxcG/KZD7SwdwOL77dVrwP4whzZTn4FBPPN//ma+Q==",
+      "type": "package",
+      "path": "csrediscore/3.0.30",
+      "files": [
+        ".signature.p7s",
+        "csrediscore.3.0.30.nupkg.sha512",
+        "csrediscore.nuspec",
+        "lib/netstandard2.0/CSRedisCore.dll",
+        "lib/netstandard2.0/CSRedisCore.xml"
+      ]
+    },
     "Microsoft.NETCore.App/2.1.0": {
       "sha512": "AvT774nTFgU8cYcGO9j1EMwuayKslxqYTurg32HGpWa2hEYNuW2+XgYVVNcZe6Ndbr84QX6fwaOZfd5n+1m2OA==",
       "type": "package",
@@ -680,10 +723,52 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "SafeObjectPool/1.0.12": {
+      "sha512": "hSIyCs5wWWnqjaIiN6Ba5aTfdZVCQ4S0t5nXUCCPE+buw8b3TN+frjjdkq/tTRcDqSVoVVgH9+GSPghzAAa0rQ==",
+      "type": "package",
+      "path": "safeobjectpool/1.0.12",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/SafeObjectPool.dll",
+        "lib/netstandard2.0/SafeObjectPool.xml",
+        "safeobjectpool.1.0.12.nupkg.sha512",
+        "safeobjectpool.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "CSRedisCore >= 3.0.30",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -694,11 +779,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisTestCore/RedisTestCore.csproj",
+      "projectUniqueName": "/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/RedisTestCore.csproj",
       "projectName": "RedisTestCore",
-      "projectPath": "/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisTestCore/RedisTestCore.csproj",
+      "projectPath": "/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/RedisTestCore.csproj",
       "packagesPath": "/Users/yaojie/.nuget/packages/",
-      "outputPath": "/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisTestCore/obj",
+      "outputPath": "/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -726,6 +811,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "CSRedisCore": {
+            "target": "Package",
+            "version": "[3.0.30, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",

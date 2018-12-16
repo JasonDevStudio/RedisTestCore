@@ -30,10 +30,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SafeObjectPool">
+      <HintPath>..\packages\SafeObjectPool.1.0.12\lib\netstandard2.0\SafeObjectPool.dll</HintPath>
+    </Reference>
+    <Reference Include="CSRedisCore">
+      <HintPath>..\packages\CSRedisCore.3.0.30\lib\netstandard2.0\CSRedisCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RedisClient\RedisClient.csproj">
+      <Project>{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}</Project>
+      <Name>RedisClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

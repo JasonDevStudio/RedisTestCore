@@ -271,11 +271,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisClient/RedisClient.csproj",
+      "projectUniqueName": "/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisClient/RedisClient.csproj",
       "projectName": "RedisClient",
-      "projectPath": "/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisClient/RedisClient.csproj",
+      "projectPath": "/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisClient/RedisClient.csproj",
       "packagesPath": "/Users/yaojie/.nuget/packages/",
-      "outputPath": "/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisClient/obj",
+      "outputPath": "/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisClient/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

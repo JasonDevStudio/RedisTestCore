@@ -1,0 +1,11 @@
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/bin/Debug/netcoreapp2.1/RedisTestCore.deps.json
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/bin/Debug/netcoreapp2.1/RedisTestCore.runtimeconfig.json
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/bin/Debug/netcoreapp2.1/RedisTestCore.runtimeconfig.dev.json
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/bin/Debug/netcoreapp2.1/RedisTestCore.dll
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/bin/Debug/netcoreapp2.1/RedisTestCore.pdb
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/obj/Debug/netcoreapp2.1/RedisTestCore.csprojAssemblyReference.cache
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/obj/Debug/netcoreapp2.1/RedisTestCore.csproj.CoreCompileInputs.cache
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/obj/Debug/netcoreapp2.1/RedisTestCore.AssemblyInfoInputs.cache
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/obj/Debug/netcoreapp2.1/RedisTestCore.AssemblyInfo.cs
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/obj/Debug/netcoreapp2.1/RedisTestCore.dll
+/Volumes/MAC_VM/00_GitHub/RedisTestCore/RedisTestCore/obj/Debug/netcoreapp2.1/RedisTestCore.pdb

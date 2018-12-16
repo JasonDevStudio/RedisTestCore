@@ -5,4 +5,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="CSRedisCore" Version="3.0.30" />
+  </ItemGroup>
 </Project>
