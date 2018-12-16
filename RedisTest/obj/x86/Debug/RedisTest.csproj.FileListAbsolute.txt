@@ -1,0 +1,5 @@
+/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisTest/bin/Debug/RedisTest.exe
+/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisTest/bin/Debug/RedisTest.pdb
+/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisTest/obj/x86/Debug/RedisTest.csproj.CoreCompileInputs.cache
+/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisTest/obj/x86/Debug/RedisTest.exe
+/Volumes/MAC_VM/00_GitHub/Jasondevstudio/RedisTestCore.git/RedisTestCore/RedisTest/obj/x86/Debug/RedisTest.pdb

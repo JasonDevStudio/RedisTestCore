@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisTest", "RedisTest\RedisTest.csproj", "{B96CF1EC-C3C4-4287-9C60-9989F32240E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisTestCore", "RedisTestCore\RedisTestCore.csproj", "{BEB2717F-DCD4-40C4-8ECF-060426C92106}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisClient", "RedisClient\RedisClient.csproj", "{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Debug|x86.ActiveCfg = Debug|x86
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Debug|x86.Build.0 = Debug|x86
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Release|x86.ActiveCfg = Release|x86
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Release|x86.Build.0 = Release|x86
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Debug|x86.Build.0 = Debug|Any CPU
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Release|x86.ActiveCfg = Release|Any CPU
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Release|x86.Build.0 = Release|Any CPU
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Debug|x86.Build.0 = Debug|Any CPU
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Release|x86.ActiveCfg = Release|Any CPU
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
