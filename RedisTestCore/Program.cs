@@ -1,21 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿ 
 namespace RedisTestCore
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
     class Program
     {
         static void Main(string[] args)
         {
             do
             {
+                
                 Console.WriteLine("请选择需要执行的函数：");
                 Console.WriteLine("1：ZSetWriteTest");
                 Console.WriteLine("2：ZSetReadTest");
-                Console.WriteLine("3：HashWriteTest");
+                Console.WriteLine("3：HashWriteTest1");
                 Console.WriteLine("4：HashReadTest");
                 Console.WriteLine("5：HashReadTaskTest");
                 Console.WriteLine("6：HashWriteTaskTest");
@@ -29,7 +32,7 @@ namespace RedisTestCore
                         ZSetReadTest();
                         break;
                     case "3":
-                        HashWriteTest();
+                        HashWriteTest1();
                         break;
                     case "4":
                         HashReadTest();
@@ -49,7 +52,7 @@ namespace RedisTestCore
             } while (Console.ReadLine().ToUpper() != "EXIT");
         }
 
-        static void ZSETTEST1()
+        private static void ZSETTEST1()
         {
             Console.Write("请输入写入次数：");
             var count = Convert.ToInt32(Console.ReadLine());
@@ -252,7 +255,7 @@ namespace RedisTestCore
             var stw01 = Stopwatch.StartNew();
 
             //do
-            //{
+            // {
             stw.Restart();
             Console.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Redis Page {page_index} 开始提取。。。");
 
@@ -284,6 +287,114 @@ namespace RedisTestCore
 
             stw01.Stop();
             Console.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Redis {end - start} 次写入完成，耗时{stw01.Elapsed.TotalMilliseconds} 毫秒");
+        }
+
+        static void HashWriteTest1()
+        {
+            Console.WriteLine("Hash 写入测试");
+            Console.WriteLine("请输入DB：");
+            var db = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("请输入KEY：");
+            var key = Console.ReadLine();
+            Console.WriteLine("请输入开始值：");
+            var start = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("请输入结束值：");
+            var end = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Redis 开始整理。。。");
+            var rds = new CSRedis.CSRedisClient(null, $"127.0.0.1:6379,defaultDatabase={db},poolsize=100,ssl=false,writeBuffer=102400");
+
+
+            var stw = Stopwatch.StartNew();
+
+            var vals = new Dictionary<string, int>();
+
+            for (int i = start; i < end; i++)
+            {
+                vals.Add($"{key}_{i}", i);
+            }
+
+            stw.Stop();
+            Console.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Redis 整理完成，耗时{stw.Elapsed.TotalMilliseconds} 毫秒。。。");
+
+            var stw01 = Stopwatch.StartNew();
+
+            Console.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Redis  开始写入。。。");
+
+            rds.StartPipe(p =>
+            {
+                foreach (var item in vals)
+                {
+                    p.HSetNx(key, item.Key, item.Value);
+                }
+            });
+
+            stw.Stop();
+            Console.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Redis 写入完成，耗时 {stw.ElapsedMilliseconds} 毫秒。。。");
+
+            stw01.Stop();
+            Console.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Redis {end - start} 次写入完成，耗时{stw01.Elapsed.TotalMilliseconds} 毫秒");
+        }
+
+        static void HashWriteTest2()
+        {
+            Console.WriteLine("Hash 写入测试");
+            Console.WriteLine("请输入DB：");
+            var db = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("请输入KEY：");
+            var key = Console.ReadLine(); 
+
+            var task01 = Task.Factory.StartNew(() => HashWriteTest3(db, key, 0, 500000));
+            var task02 = Task.Factory.StartNew(() => HashWriteTest3(db, key, 500000, 1000000));
+            var task03 = Task.Factory.StartNew(() => HashWriteTest3(db, key, 1000000, 1500000));
+            var task04 = Task.Factory.StartNew(() => HashWriteTest3(db, key, 1500000, 2000000));
+            var task05 = Task.Factory.StartNew(() => HashWriteTest3(db, key, 2000000, 2500000));
+            var task06 = Task.Factory.StartNew(() => HashWriteTest3(db, key, 2500000, 3000000));
+            var task07 = Task.Factory.StartNew(() => HashWriteTest3(db, key, 3000000, 3500000));
+
+            while (!task01.IsCompleted || !task02.IsCompleted || !task03.IsCompleted)
+            {
+
+            }
+        }
+
+        static void HashWriteTest3(int db, string key, int start, int end)
+        {
+            var id = Task.CurrentId;
+            var sb = new StringBuilder();
+            sb.AppendLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Task: {id} Redis 开始整理。。。");
+            var rds = new CSRedis.CSRedisClient(null, $"127.0.0.1:6379,defaultDatabase={db},poolsize=100,ssl=false,writeBuffer=102400");
+
+            var stw = Stopwatch.StartNew();
+
+            var vals = new Dictionary<string, int>();
+
+            for (int i = start; i < end; i++)
+            {
+                vals.Add($"{key}_{i}", i);
+            }
+
+            stw.Stop();
+            sb.AppendLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Redis 整理完成，耗时{stw.Elapsed.TotalMilliseconds} 毫秒。。。");
+
+            var stw01 = Stopwatch.StartNew();
+
+            sb.AppendLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Redis  开始写入。。。");
+             
+            foreach (var item in vals)
+            {
+                rds.HSetNx(key, item.Key, item.Value);
+            }
+
+            stw.Stop();
+            sb.AppendLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Redis 写入完成，耗时 {stw.ElapsedMilliseconds} 毫秒。。。");
+
+            stw01.Stop();
+            sb.AppendLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss:ffff} Task: {id} Redis {end - start} 次写入完成，耗时{stw01.Elapsed.TotalMilliseconds} 毫秒");
+            sb.AppendLine();
+            sb.AppendLine();
+            sb.AppendLine();
+            Console.WriteLine(sb);
         }
 
         static void HashReadTaskTest()

@@ -1,29 +1,64 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28407.52
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisTest", "RedisTest\RedisTest.csproj", "{B96CF1EC-C3C4-4287-9C60-9989F32240E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisTestCore", "RedisTestCore\RedisTestCore.csproj", "{BEB2717F-DCD4-40C4-8ECF-060426C92106}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisTestCore", "RedisTestCore\RedisTestCore.csproj", "{BEB2717F-DCD4-40C4-8ECF-060426C92106}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisClient", "RedisClient\RedisClient.csproj", "{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisClient", "RedisClient\RedisClient.csproj", "{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Debug|x64.ActiveCfg = Debug|x64
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Debug|x64.Build.0 = Debug|x64
 		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Debug|x86.ActiveCfg = Debug|x86
 		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Debug|x86.Build.0 = Debug|x86
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Release|x64.ActiveCfg = Release|x64
+		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Release|x64.Build.0 = Release|x64
 		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Release|x86.ActiveCfg = Release|x86
 		{B96CF1EC-C3C4-4287-9C60-9989F32240E2}.Release|x86.Build.0 = Release|x86
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Debug|x64.ActiveCfg = Debug|x64
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Debug|x64.Build.0 = Debug|x64
 		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Debug|x86.Build.0 = Debug|Any CPU
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Release|x64.ActiveCfg = Release|x64
+		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Release|x64.Build.0 = Release|x64
 		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Release|x86.ActiveCfg = Release|Any CPU
 		{BEB2717F-DCD4-40C4-8ECF-060426C92106}.Release|x86.Build.0 = Release|Any CPU
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Debug|x64.ActiveCfg = Debug|x64
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Debug|x64.Build.0 = Debug|x64
 		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Debug|x86.Build.0 = Debug|Any CPU
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Release|x64.ActiveCfg = Release|x64
+		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Release|x64.Build.0 = Release|x64
 		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Release|x86.ActiveCfg = Release|Any CPU
 		{6BDFDBFE-E54A-4C1A-9B9C-0F570C9A48E2}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D05F65DA-30A9-4CF4-9B73-958E0786237B}
 	EndGlobalSection
 EndGlobal
